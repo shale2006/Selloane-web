@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Days and Months</title>
+    
+</head>
+<body>
+    <h1>Days and Months</h1>
+
+    <section>
+        
+        <p id="dayText">Monday</p>
+
+        
+        <button id="dayButton">Change day</button>
+    </section>
+
+    <section>
+        
+        <p id="monthText">January</p>
+
+        
+        <button id="monthButton">Change month</button>
+    </section>
+
+    <script>
+        
+        const daysOfWeek = [
+            "Monday", "Tuesday", "Wednesday", "Thursday",
+            "Friday", "Saturday", "Sunday"
+        ];
+
+        
+        const monthsOfYear = [
+            "January", "February", "March", "April",
+            "May", "June", "July", "August",
+            "September", "October", "November", "December"
+        ];
+
+        
+        let dayIndex = 0;
+        let monthIndex = 0;
+
+        
+        const dayText = document.getElementById("dayText");
+        const monthText = document.getElementById("monthText");
+        const dayButton = document.getElementById("dayButton");
+        const monthButton = document.getElementById("monthButton");
+
+        
+        function changeDay() {
+            dayIndex = (dayIndex + 1) % daysOfWeek.length;
+            dayText.textContent = daysOfWeek[dayIndex];
+        }
+
+        
+        function changeMonth() {
+            monthIndex = (monthIndex + 1) % monthsOfYear.length;
+            monthText.textContent = monthsOfYear[monthIndex];
+        }
+
+        
+        dayButton.addEventListener("click", changeDay);
+        monthButton.addEventListener("click", changeMonth);
+    </script>
+</body>
+</html>

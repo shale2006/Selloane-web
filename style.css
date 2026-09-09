@@ -1,0 +1,38 @@
+
+	body{
+		font-family: Arial;
+		color: brown;
+		text-align: center;
+		padding: 50px;
+	}
+	button{
+		padding: 1 0px 20px;
+		background-color: #007BFF;
+		color: black;
+		border: none;
+		margin: 20px;
+		cursor: pointer;
+	}
+	button:hover{
+		background-color: #0056b3;
+	}
+	  body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 60px;
+        }
+
+        
+        section {
+            margin-bottom: 50px;
+        }
+
+        
+        p {
+            font-size: 30px;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
